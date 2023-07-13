@@ -1,0 +1,121 @@
+/* ---------- root settings ---------- */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Rubik+Puddles&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  list-style: none;
+}
+
+/* body */
+
+/* ---------- header settings ---------- */
+header {
+  background: linear-gradient(to right, #4e4997, #744aa0);
+  color: #fff;
+  padding: 20px;
+}
+/* menu */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  gap: 10px;
+}
+
+.container .menu ul {
+  height: 40px;
+}
+
+.container .menu ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.container .menu a {
+  text-decoration: none;
+  color: #ffffff85;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.15s ease-in-out;
+}
+.container .menu a:hover {
+  color: #fff;
+}
+/* right block */
+.menu-right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.menu-right a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.sign-up {
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  background: #0000003d;
+  border-radius: 5px;
+}
+
+.search {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  /*  */
+}
+.search input {
+  background: none;
+  border: none;
+  outline: none;
+  width: 145px;
+  padding: 5px;
+  color: #fff;
+  font-size: 13px !important;
+  transition: 0.5s;
+}
+
+.search input:focus {
+  width: 200px;
+}
+
+.search input::placeholder {
+  color: #fff;
+}
+
+.banner {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.banner i {
+  font-size: 80px;
+  color: #ffffff85;
+}
+.banner h1 {
+  font-size: 35px;
+  font-weight: 400;
+  margin: 20px;
+}
+.banner h5 {
+  color: #ffffff85;
+  font-weight: 400;
+}
+
+/* ---------- main settings ---------- */
+
+/* cards */
+
+/* ---------- footer settings ---------- */
