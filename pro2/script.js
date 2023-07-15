@@ -6,8 +6,6 @@ const lastName = document.querySelector(".lastName");
 const email = document.querySelector(".email");
 const password = document.querySelector(".password");
 
-const nameLogin = document.querySelector(".name-login");
-const lastNameLogin = document.querySelector(".lastName-login");
 const emailLogin = document.querySelector(".email-login");
 const passwordLogin = document.querySelector(".password-login");
 
