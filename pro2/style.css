@@ -10,15 +10,48 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
 }
 .conteiner{
-    width: 300px;
-    height: 300px;
+    width: 550px;
+    aspect-ratio: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
+    justify-content: start;
+    padding-top: 50px;
+    gap: 15px;
     border: 1px solid;
+}
+.hide-containers{
+    display: none;
+}
+
+h3{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid lightgrey;
+}
+
+input:focus {
+    border: 1px solid tomato;
+}
+
+.password{
+    margin-bottom: 10px;
+}
+
+button {
+    width: 80%;
+    padding: 10px;
+}
+
+p{
+    width: 100%;
+    text-align: center;
 }
