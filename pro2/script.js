@@ -7,6 +7,7 @@ const email = document.querySelector(".email");
 const password = document.querySelector(".password");
 
 const login = document.querySelector(".login");
+
 const passwordLogin = document.querySelector(".password-login");
 
 const buttonRegistration = document.querySelector(".sing-up");
