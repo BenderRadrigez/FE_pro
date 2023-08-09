@@ -25,6 +25,9 @@ body{
 .hide-containers{
     display: none;
 }
+.conteiner-sing-in{
+    padding-top: 100px;
+}
 
 h3{
     font-size: 35px;
@@ -54,4 +57,7 @@ button {
 p{
     width: 100%;
     text-align: center;
+}
+.password-login{
+    margin-bottom: 20px;
 }

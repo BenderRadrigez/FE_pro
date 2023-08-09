@@ -7,11 +7,12 @@ const email = document.querySelector(".email");
 const password = document.querySelector(".password");
 
 const login = document.querySelector(".login");
-
 const passwordLogin = document.querySelector(".password-login");
 
 const buttonRegistration = document.querySelector(".sing-up");
 const buttonLogin = document.querySelector(".sing-in");
+const buttonToggleSingUp = document.querySelector(".toggle-btn-sing-up");
+const buttonToggleLogin = document.querySelector(".toggle-btn-login");
 
 const p = document.createElement("p");
 
@@ -55,7 +56,10 @@ buttonRegistration.addEventListener("click", () => {
       "password must have at least 1 capital letter, 1 small letter, and 1 number, and must be at least 8",
       conteinerRegistration
     );
-  } else saveUserData();
+  } else {
+    saveUserData();
+    setTimeout(goToProfil, 3000);
+  }
 });
 
 buttonLogin.addEventListener("click", () => {
@@ -73,7 +77,7 @@ buttonLogin.addEventListener("click", () => {
     }
   }
   if (isCheckPass) {
-    location = "index2.html";
+    goToProfil()
   } else {
     printMessage(
       "red",
@@ -84,6 +88,18 @@ buttonLogin.addEventListener("click", () => {
     login.value = "";
   }
 });
+
+buttonToggleSingUp.addEventListener("click", () => {
+  conteinerRegistration.classList.toggle("hide-containers");
+  conteinerLogin.classList.toggle("hide-containers");
+})
+
+buttonToggleLogin.addEventListener("click", () => {
+  conteinerLogin.classList.toggle("hide-containers");
+  conteinerRegistration.classList.toggle("hide-containers");
+})
+
+
 
 // сохранение данных пользователя
 function saveUserData() {
@@ -145,4 +161,9 @@ function isCheckPassword(password) {
   }
 
   return isUpper && isLower && isNumber ? true : false;
+}
+
+// переход в профиль
+function goToProfil(){
+  location = "index2.html";
 }
